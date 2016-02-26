@@ -225,9 +225,44 @@ body {
 			&:active {
 				.gradient--green(top, darken(#1e9934, 5%), darken(#1e9934, 5%));
 			}
-		}	
+		}
 
 	}
+
+	.header-cart {
+		clear: both;	
+		padding-left: 126px;
+		height: 115px;
+		float: right;
+		margin-top: 30px;
+
+
+		.header-cart__info {
+		    padding-left: 0px;text-align:left;
+
+		    .header-cart__img {
+				background: url("../img/header-cart.png") no-repeat left center;
+				width: 126px;
+				height: 115px;
+				float: left;
+				margin-right: -15px;
+				position: relative;
+		    }
+
+		    .cart__info {
+		    	text-decoration: none;
+				color: #ffffff;
+				font-size: 25px;
+		    	background: rgba(255, 100, 152, 0.8);
+		    	display: block;
+		    	.border-radius(8px);
+		    	padding: 14px;
+		    	font-family: BebasBold;
+		    	float: left;
+		    	padding-left: 25px;
+			}	
+		}
+	}	
 
 }
 
