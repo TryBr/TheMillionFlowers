@@ -9,15 +9,13 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/owl.transitions.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -26,8 +24,10 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+    <!-- Шапка -->
     <header class="header">
-        <nav class="navbar top--navbar navbar-fixed-top" role="navigation">
+    <!-- Верхнее меню -->
+      <nav class="navbar top--navbar" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -55,43 +55,266 @@
                 <li class="top-menu__li li_separator">|</li>
                 <li class="top-menu__li"><a href="" class="top-menu__li__link">Контакты</a></li>
               </ul>
-          </div><!--/.navbar-collapse -->
+          </div>
         </div>
       </nav>
-      <div class="container960 container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="header-logo-wrapper">
-              <a href="" class="logo__link"><img src="img/logo.png" alt="" class="logo__img"></a>
-            </div>
+    <!-- Конец верхнего меню -->
+    <!-- Информация в шапке -->
+    <div class="container960 container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="header-logo-wrapper">
+            <a href="" class="logo__link"><img src="img/logo.png" alt="" class="logo__img"></a>
           </div>
-          <div class="col-md-8">
-            <div class="header-info-wrapper">
-                <div class="phone">
-                  <span class="code">(351)</span>258-03-53
-                </div>
-                <div class="adress">
-                   г. Челябинск, Свердловский проспект, 6
-                </div>
-                <div class="btn-wrapper">
-                  <a href="" class="btn__reg__call">Заказать звонок</a>
+        </div>
+        <div class="col-md-8">
+          <div class="header-info-wrapper">
+              <div class="phone">
+                <span class="code">(351)</span>258-03-53
+              </div>
+              <div class="adress">
+                 г. Челябинск, Свердловский проспект, 6
+              </div>
+              <div class="btn-wrapper">
+                <a href="" class="btn__reg__call">Заказать звонок</a>
               </div>
               <div class="header-cart">
                 <div class="header-cart__info">
-                  <a href="" class="cart__info__link"><img src="img/header-cart.png" alt="" class="header-cart__img">
                   <a href="" class="cart__info__link">
-                  <div class="cart__info" href="">
-                    Товаров: 1<br>
-                    На сумму: 5000 руб.
-                  </div>
+                    <img src="img/header-cart.png" alt="" class="header-cart__img">
+                  </a>
+                  <a href="" class="cart__info__link">
+                    <div class="cart__info" href="">
+                      Товаров: 1<br>
+                      На сумму: 5000 руб.
+                    </div>
                   </a>
                 </div>
               </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Конец информации в шапке -->
+    </header>
+    <!-- Конец Шапки -->
+    <!-- Слайдер -->
+    <div class="slider-wrapper">
+      <div class="container960">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="owl-demo" class="owl-carousel owl-theme">
+              <div class="item"><img src="assets/fullimage1.jpg" alt="The Last of us"></div>
+              <div class="item"><img src="assets/fullimage2.jpg" alt="GTA V"></div>
+              <div class="item"><img src="assets/fullimage3.jpg" alt="Mirror Edge"></div>
+            </div> 
+          </div>
+        </div>       
+      </div>
+    </div>
+    <!-- Конец слайдера -->
+    <!-- Меню категорий -->
+    <div class="categories-menu">
+      <div class="container960">
+        <nav class="navbar" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar-categories" class="navbar-collapse collapse">
+              <ul class="categories-menu-list">
+                <li class="categories-menu__item active"><a href="" class="categories-menu__item__link">Букеты</a></li>
+                <li class="categories-menu__item"><a href="" class="categories-menu__item__link">Цветы</a></li>
+                <li class="categories-menu__item"><a href="" class="categories-menu__item__link">Композиции</a></li>
+                <li class="categories-menu__item"><a href="" class="categories-menu__item__link">Игрушки</a></li>
+              </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Конец меню категорий -->
+    <!-- Фильтры -->
+    <div class="item-filters">
+      <div class="container960">
+        <div class="row">
+          <div class="col-md-1">
+              <div class="filters__title">Фильтры:</div>
+          </div>
+          <form class="filters-form" action="">
+            <div class="col-md-3">
+              <select class="filter-select"  name = "Кому">
+                <option disabled selected>Кому</option>
+                <option>человеку</option>
+                <option>роботу</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <select class="filter-select">
+                <option disabled selected>С цветами</option>
+                <option>живыми</option>
+                <option>не живыми</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <select class="filter-select">
+                <option disabled selected>Событие</option>
+                <option>Пятница</option>
+                <option>8 марта</option>
+                <option>Китайский новый год</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <select class="filter-select">
+                <option disabled selected>Цена</option>
+                <option>от 2000</option>
+                <option>от 4000</option>
+                <option>от 10000</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>      
+    </div>
+    <!-- Конец фильтров -->
+    <!-- Каталог товаров главной -->
+    <div class="catalog-items-list">
+      <div class="container960">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="catalog-item">
+               <div class="item__title">
+                 Хороший вечер
+               </div>
+               <div class="item-photo-wrapper">
+                 <img src="img/item-photo.jpg" alt="" class="item__photo">
+               </div>
+               <div class="item__price">
+                  5 000
+                 <div class="price__ruble">
+                   pуб.
+                 </div>
+               </div>
+               <div class="item-addToCart-wrapper">
+                 <a href="" class="item__atc__btn">В корзину</a>
+               </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="catalog-item">
+               <div class="item__title">
+                 Хороший вечер
+               </div>
+               <div class="item-photo-wrapper">
+                 <img src="img/item-photo.jpg" alt="" class="item__photo">
+               </div>
+               <div class="item__price">
+                  5 000
+                 <div class="price__ruble">
+                   pуб.
+                 </div>
+               </div>
+               <div class="item-addToCart-wrapper">
+                 <a href="" class="item__atc__btn">В корзину</a>
+               </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="catalog-item">
+               <div class="item__title">
+                 Хороший вечер
+               </div>
+               <div class="item-photo-wrapper">
+                 <img src="img/item-photo.jpg" alt="" class="item__photo">
+               </div>
+               <div class="item__price">
+                  5 000
+                 <div class="price__ruble">
+                   pуб.
+                 </div>
+               </div>
+               <div class="item-addToCart-wrapper">
+                 <a href="" class="item__atc__btn">В корзину</a>
+               </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="catalog-item">
+               <div class="item__title">
+                 Хороший вечер
+               </div>
+               <div class="item-photo-wrapper">
+                 <img src="img/item-photo.jpg" alt="" class="item__photo">
+               </div>
+               <div class="item__price">
+                  5 000
+                 <div class="price__ruble">
+                   pуб.
+                 </div>
+               </div>
+               <div class="item-addToCart-wrapper">
+                 <a href="" class="item__atc__btn">В корзину</a>
+               </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="catalog-item">
+               <div class="item__title">
+                 Хороший вечер
+               </div>
+               <div class="item-photo-wrapper">
+                 <img src="img/item-photo.jpg" alt="" class="item__photo">
+               </div>
+               <div class="item__price">
+                  5 000
+                 <div class="price__ruble">
+                   pуб.
+                 </div>
+               </div>
+               <div class="item-addToCart-wrapper">
+                 <a href="" class="item__atc__btn">В корзину</a>
+               </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="catalog-item">
+               <div class="item__title">
+                 Хороший вечер
+               </div>
+               <div class="item-photo-wrapper">
+                 <img src="img/item-photo.jpg" alt="" class="item__photo">
+               </div>
+               <div class="item__price">
+                  5 000
+                 <div class="price__ruble">
+                   pуб.
+                 </div>
+               </div>
+               <div class="item-addToCart-wrapper">
+                 <a href="" class="item__atc__btn">В корзину</a>
+               </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="more-btn-wrapper">
+              <button class="more__btn">
+                Еще
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+    <!-- Конец каталога товаров на главной -->
+
+
+
+
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 <!--     <div class="jumbotron">
@@ -131,6 +354,7 @@
 
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
