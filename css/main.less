@@ -1,3 +1,9 @@
+.top-menu {
+    line-height: 2.8;
+    margin: 0 auto;
+    width: 700px;
+}
+
 /*===========================================
 =            Подключаемые шрифты            =
 ===========================================*/
@@ -53,6 +59,18 @@
     font-weight: normal;
 }
 
+
+.footer .bottom--navbar {
+}
+
+
+.footer .bottom--navbar {
+}
+
+
+.footer .bottom--navbar {
+}
+
 /*=====  End of Подключаемые шрифты  ======*/
 
 
@@ -102,9 +120,22 @@
 /*----------  Конец Кнопок  ----------*/
 
 body {
-	background: url("../img/bg.jpg");
-	background-repeat: repeat;
-	background-position: 100% 100%;
+	background: 
+		url(../img/bg.jpg) 100% 100%;
+	position: relative;
+
+	&:before {
+		content: '';
+		background: url('../img/footer-bg.png') no-repeat;
+		position: absolute;
+		bottom: 0;
+		width: 1920px;
+		height: 604px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		z-index: 0;
+	}
 }
 
 
@@ -155,8 +186,8 @@ body {
 ====================================*/
 
 .top--navbar {
-	background: @NavBarBg;
 	height: 50px;
+	background: #24150c;
 }
 
 .navbar__title {
@@ -168,10 +199,6 @@ body {
 }
 
 .top-menu {
-	
-	width: 700px;
-	margin: 0 auto;
-	line-height: 2.8;
 
 	.top-menu__li {
 		display: inline-block;
@@ -622,10 +649,10 @@ body {
 
 			.advantages__img {
 				margin: 0 auto;
-				max-width: 64px;
-				max-height: 69px;
+				max-width: 82px;
+				max-height: 78px;
 				display: block;
-				margin-top: 24px;;
+				margin-top: 18px;;
 			}
 
 		}
@@ -679,6 +706,7 @@ body {
 
 .reviews-wrapper {
 	margin-top: 50px;
+	position: relative;
 
 	.reviews__title {
 		text-align: center;
@@ -772,7 +800,7 @@ body {
 ===================================*/
 
 .about-text-wrappper {
-
+	position: relative;
 	.container960 {
 		text-align: center;
 		padding: 20px 20px;
@@ -806,9 +834,142 @@ body {
 =============================*/
 
 .footer {
-	background: url('../img/footer-bg.png') no-repeat;
-	height: 609px;
+	background: #24150c;
 	background-position: center center;
+	margin-top: 200px;
+	padding: 15px 0 20px 0;
+	position: relative;
+
+	.container960 {
+		overflow: hidden;
+		position: relative;
+	}
+
+	&:before {
+		content: '';
+		background: url('../img/footer-phone-icon.png') no-repeat;
+		position: absolute;top:-36px;
+		width: 82px;
+		height: 179px;
+		left: 15%;
+	}
+
+	.footer__phone {
+		font-size: 47px;
+		color: #fff;
+		font-family: @bebasBold;
+		float: left;
+		.code {
+			color: @pink;
+			margin-right: 10px;
+		}
+	}
+
+	.bottom--navbar {
+		margin: 0px;
+	}
+
+
+	.bottom-menu {
+		float: left;
+		padding: 0;
+		margin: 0;
+		margin-left: 34px;
+		margin-top: 18px;;
+	.bottom-menu__li {
+		display: inline-block;
+		font-family: @bebasBold;
+	}
+
+	.bottom-menu__li__link {
+		color: #fff;
+		font-size: 18px;
+		text-decoration: none;
+		font-weight: 700;
+
+		&:hover{
+		color: @green;
+		}
+	}
+
+	.bottom-menu__li.li_separator {
+		color: #fff;
+		font-size: 10px;
+		padding: 0 16px;
+	}
+}	
+
+	.footer-info-bottom {
+		clear: both;
+		.btn-wrapper {
+		float: left;
+		overflow: hidden;
+		background: rgba(0, 0, 0, 0.5);
+		.border-radius(3px);padding:3px;
+		margin-right: 25px;
+	
+		.btn__reg__call {
+			width: 240px;
+			height: 35px;
+			color: #fff;
+			font-size: 20px;
+			font-family: @bebasBold;
+			text-align: center;
+			.border-radius(4px);
+			.gradient(top, #7cc21c, #1e9934);
+			.green--btn;
+			display: block;
+			text-decoration: none;
+			line-height: 1.8;
+			text-shadow: 0 1px 0 #000;
+
+			&:hover {
+				.gradient(top, #7cc21c, lighten(#1e9934, 5%));	
+			}
+
+			&:active {
+				.gradient(top, darken(#1e9934, 5%), darken(#1e9934, 5%));
+			}
+		}
+
+		}
+
+		.payment-options {
+			overflow: hidden;
+			line-height: 2.8;
+			float: left;;
+			.item {
+				float: left;
+				margin-left: 10px;	
+			}
+		}
+
+		.social-links {
+			float: left;
+			margin-left: 10px;
+			margin-top: 5px;
+
+			.item {
+				float: left;
+				margin-left: 10px;
+			}
+		}
+
+		.w-developer {
+			margin-left: 28px;
+			float: left;
+			line-height: 2.5;
+			.w__link {
+				color: #5e4d44;
+				font-family: @bebasBold;
+				font-size: 16px;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	
+
 }
 
 /*=====  End of Футер  ======*/
