@@ -131,9 +131,9 @@ body {
 	height: 505px;
 }
 
-.container960 {
+.container940 {
 	margin: 0 auto;
-	width: 960px;
+	width: 940px;
 }
 
 .collapsed-menu__title {
@@ -204,6 +204,7 @@ body {
 
 		&:hover{
 		color: @green;
+		background: none;
 		}
 	}
 
@@ -381,18 +382,22 @@ body {
 =            Меню категорий            =
 ======================================*/
 
-.categories-menu .container960 {
-	width: 990px;
+.categories-menu .container940 {
+	width: 960px;
+
+	.navbar-collapse {
+		background: none;
+	}
 }
 
 .categories-menu-list {
 	margin: 0px;
 	padding: 0px;
 	.categories-menu__item {
-		width: 221px;
+		width: 220px;
 		text-align: center;
 		border-radius: 5px;
-		margin-right: 20px;
+		margin-right: 15px;
 		display: inline-block;
 		background: #3a2214;
 		
@@ -557,26 +562,24 @@ body {
 =            Фильтры на главной            =
 ==========================================*/
 
-.item-filters .container960 {
+.item-filters .container940 {
 	
 	border-radius: 4px;
 	background: rgba(58, 34, 20, 0.5);
 	padding: 6px 0;
 	overflow: hidden;
 
-
 	.filters__title {
 		color: #fff;
 		font-size: 18px;
 		font-family: @bebasRegular;
 		margin-left: 15px;
-		margin-top: 4px;;
+		margin-top: 6px;
 	}
 
 	.filter-select {
 	background: #fff;
 	border-radius: 4px;
-	height: 30px;
 	color: #000;
 	font-size: 18px;
 	padding-left: 10px;
@@ -585,9 +588,18 @@ body {
 	}
 
 	.col-md-3 {
-		width: 224px;
-	}
+    width: 215px;
+    }
+
 }
+
+
+
+
+
+
+/*=====  End of Стили для разрешений  ======*/
+
 
 /*=====  End of Фильтры на главной  ======*/
 
@@ -648,7 +660,7 @@ body {
 		position: relative;
 		width: 140px;
 		float: left;
-		margin-right: 72px;
+		margin-right: 65px;
 
 		&:last-child {
 			margin-right: 0px;
@@ -715,7 +727,7 @@ body {
 		-moz-box-shadow: 0px 4px 10px 0px rgba(2, 2, 2, 0.25);
 		box-shadow: 0px 4px 10px 0px rgba(2, 2, 2, 0.25);
 		float: left;
-		margin-right: 40px;
+		margin-right: 20px;
 		margin-bottom: 40px;
 
 		&:nth-child(odd) {
@@ -788,7 +800,7 @@ body {
 
 .about-text-wrappper {
 	position: relative;
-	.container960 {
+	.container940 {
 		text-align: center;
 		padding: 20px 20px;
 		background: #fff0eb;
@@ -827,9 +839,10 @@ body {
 	padding: 15px 0 20px 0;
 	position: relative;
 
-	.container960 {
+	.container940 {
 		overflow: hidden;
 		position: relative;
+		width: 960px;
 	}
 
 	&:before {
@@ -842,10 +855,9 @@ body {
 	}
 
 	.footer__phone {
-		font-size: 47px;
+		font-size: 41px;
 		color: #fff;
 		font-family: @bebasBold;
-		float: left;
 		.code {
 			color: @pink;
 			margin-right: 10px;
@@ -854,6 +866,19 @@ body {
 
 	.bottom--navbar {
 		margin: 0px;
+		float: none;
+		width:100%;
+
+		.container {
+			width: 100%;
+			padding: 0px;
+		}
+
+		.navbar-collapse {
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
 	}
 
 
@@ -861,18 +886,20 @@ body {
 		float: left;
 		padding: 0;
 		margin: 0;
-		margin-left: 34px;
-		margin-top: 18px;;
+		margin-top: 6px;
+
 	.bottom-menu__li {
-		display: inline-block;
 		font-family: @bebasBold;
+		display: inline-block;
 	}
 
 	.bottom-menu__li__link {
 		color: #fff;
-		font-size: 18px;
 		text-decoration: none;
+		display: block;
+		padding: 10px 0;
 		font-weight: 700;
+		font-size: 18px;
 
 		&:hover{
 		color: @green;
@@ -882,18 +909,19 @@ body {
 	.bottom-menu__li.li_separator {
 		color: #fff;
 		font-size: 10px;
-		padding: 0 16px;
+		padding: 0 20px;
 	}
 }	
 
 	.footer-info-bottom {
 		clear: both;
+
 		.btn-wrapper {
-		float: left;
 		overflow: hidden;
 		background: rgba(0, 0, 0, 0.5);
 		.border-radius(3px);padding:3px;
 		margin-right: 25px;
+		float: left;
 	
 		.btn__reg__call {
 			width: 240px;
@@ -975,6 +1003,11 @@ body {
 	background: #ffffff;
 }
 
+.navbar-collapse {
+	padding-right: 10px;
+    padding-left: 10px;
+}
+
 /*=====  End of Измененные стили Bootstrap  ======*/
 
 
@@ -983,6 +1016,16 @@ body {
 ============================================*/
 
     @media (min-width: 320px) and (max-width: 960px) {
+    	
+    	.navbar-collapse {
+			padding-right: 10px;
+		    padding-left: 10px;
+		    box-shadow: none;
+			position: relative;
+		    z-index: 99;
+		    background: rgba(42,147,37,.9);
+		}
+
     	.top-menu .top-menu__li.li_separator {
         	display: none;
         }
@@ -991,6 +1034,25 @@ body {
 		    margin: 0 auto;
 		    width: auto;
 		    float: none;
+		}
+
+		.footer:before {
+			display: none;
+		}
+
+		.footer .bottom-menu .bottom-menu__li {
+			display: block;
+			text-align: center;
+		}
+
+		.bottom-menu .bottom-menu__li.li_separator {
+        	display: none;
+        }
+
+       .bottom-menu {
+		    margin: 0 auto;
+		    width: auto;
+		    float: none !important;
 		} 
     }
 
@@ -1005,18 +1067,12 @@ body {
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
-		#navbar {
-    	    background: rgba(42,147,37,0.90);
-			box-shadow: none;
-			position: relative;
-    		z-index: 99;
-        }
 
         .navbar-collapse {
         	box-shadow: none;
         }
 
-        .container960 {
+        .container940 {
             width: 100% !important;
         }
 
@@ -1091,18 +1147,18 @@ body {
 			color: #24150c;
 		}
 
-		.item-filters .container960 .col-md-3 {
+		.item-filters .container940 .col-md-3 {
 			width: 100%;
 		}
 
-		.item-filters .container960 .filters__title {
+		.item-filters .container940 .filters__title {
 		    margin-left: 0px;
 		    margin-top: 4px;
 		    text-align: center;
 		    margin-bottom: 10px;
 		}
 
-		.item-filters .container960 .filter-select {
+		.item-filters .container940 .filter-select {
 			width: 100%;
 			height: auto;
 			margin-bottom: 10px;
@@ -1141,7 +1197,33 @@ body {
 			height: 80px;
 		}
 
-    }
+		.footer-info-top {
+			.footer__phone {
+				float: none;
+				text-align: center;
+			}
+
+		}
+
+		.footer-info-bottom {
+			.btn-wrapper {
+				float: none;
+				width: 200px;
+				margin: 0 auto;
+			}
+
+			.w-developer {
+				float: none !important;
+				text-align: center;
+			}
+
+			.btn-wrapper {
+		    float: none !important;
+		    width: 246px;
+		    margin: 0 auto;
+
+		    }
+		}
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
@@ -1154,8 +1236,8 @@ body {
     }
 
 
+}
+
 
 /*=====  End of Стили для разрешений  ======*/
 
-
-  
