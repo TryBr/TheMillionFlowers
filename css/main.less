@@ -117,6 +117,23 @@
 /*----------  Конец Переменные  ----------*/
 
 
+/*==================================================
+=            Классы для заголовков и тд            =
+==================================================*/
+
+h2 {
+	color: #ffffff;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/*=====  End of Классы для заголовков и тд  ======*/
+
+
+
+
 /*----------  Кнопки  ----------*/
 
 .green--btn {
@@ -489,7 +506,7 @@ body {
 		width: 220px;
 		text-align: center;
 		border-radius: 5px;
-		margin-right: 15px;
+		margin-right: 16px;
 		display: inline-block;
 		background: #3a2214;
 		
@@ -756,7 +773,7 @@ body {
 		position: relative;
 		width: 140px;
 		float: left;
-		margin-right: 65px;
+		margin-right: 60px;
 
 		&:last-child {
 			margin-right: 0px;
@@ -1029,7 +1046,7 @@ body {
 				text-decoration: none;
 				line-height: 1.8;
 				text-shadow: 0 1px 0 #000;
-				width: 219px;
+				width: 209px;
 
 				&:hover {
 					.gradient(top, #7cc21c, lighten(#1e9934, 5%));
@@ -1045,7 +1062,7 @@ body {
 			overflow: hidden;
 			line-height: 2.8;
 			.item {
-				margin-right: 10px;
+				margin-right: 8px;
 				float: left;	
 			}
 		}
@@ -1063,7 +1080,7 @@ body {
 			.w__link {
 				color: #5e4d44;
 				font-family: @bebasBold;
-				font-size: 15px;
+				font-size: 14px;
 				text-decoration: underline;
 			}
 		}
@@ -1281,6 +1298,175 @@ body {
 }
 
 /*=====  End of Карточка товара  ======*/
+
+
+/*========================================
+=            Страница корзины            =
+========================================*/
+
+.cart-container {
+	.cart-items {
+		.item {
+			border-radius: 5px;
+			height: 230px;
+			overflow: hidden;
+			background: #3a2214;
+			font-family: @exo2;
+			border: 1px solid rgba(218, 218, 218, 0.5);
+			margin-bottom: 20px;
+			position: relative;
+			.photo {
+				text-align: center;
+				background: #fff;
+				height: 230px;
+				line-height: 16;
+				.photo__img {
+					max-width: 220px;;
+				}
+			}
+
+			.title {
+				color: #fff;
+				font-size: 20px;
+				padding-top: 75px;
+				padding-left: 50px;;;
+
+				.type {
+					display: block;
+				}
+
+				.name {
+					display: block;
+				}
+			}
+
+			.item__link {
+				color: #fff;
+				line-height: 1.8;
+			}
+
+			.price {
+				color: #f32144;
+				font-size: 30px;
+				font-weight: bold;
+				line-height: 8.2;
+				text-align: center;
+
+				.rub {
+					color: #fff;
+					font-size: 20px;
+					padding-left: 10px;
+				}
+			}
+
+			.value {
+				padding-top: 105px;
+				.ui-spinner-input {
+					width: 100%;
+					background: #fff;
+					border-radius: 4px;
+					margin: 0px;
+					text-align: center;
+					font-size: 12px;
+					font-weight: bold;
+					color: #222222;
+					height: 32px;
+				}
+
+				.ui-spinner-up {
+					background: url("../img/spinner-nav-up.jpg") no-repeat;
+					background-position: center center;
+					width: 30px;
+					height: 32px;
+					display: block;
+				    position: absolute;
+				    left: 0px;
+				    top: 0;
+				    cursor: pointer;
+				}
+
+				.ui-spinner-down {
+					background: url("../img/spinner-nav-down.jpg") no-repeat;
+					background-position: center center;
+					width: 30px;
+					height: 32px;
+					display: block;
+					position: absolute;
+				    right: 0px;
+				    top: 0%;
+				    cursor: pointer;
+				}
+			}
+
+			.delete {
+				line-height: 20;
+				text-align: center;
+				.delete__btn {
+					background: url("../img/delete-btn.png") no-repeat;
+					width: 40px;
+					height: 40px;
+					border: none;
+					
+					&:hover {
+						opacity: 0.9;
+					}
+				}
+			}
+		}
+
+		.total-info {
+			.result {
+				background: #3a2214;
+				border-radius: 5px;
+				text-transform: uppercase;
+				font-weight: bold;
+				height: 50px;
+				line-height: 1.5;
+				text-align: right;;
+				.total__text {
+					color: #fff;
+					font-size: 20px;
+				}
+
+				.total__value {
+					color: #f32144;
+					font-size: 30px;
+					padding-left: 10px;
+				}
+			}
+
+			.to-order-wrapper {
+				background: rgba(0, 0, 0, 0.5);
+				.border-radius(3px);
+				padding: 3px;
+				height: 50px;
+				.to__order__btn {
+					.gradient(top, #ee2042, #d81838);
+					border-bottom: 1px solid #93040d;
+					.border-radius(4px);
+					display: block;
+					border: none;
+					color: #fff;
+					font-size: 20px;
+					font-family: @bebasBold;
+					text-align: center;
+					width: 150px;
+					height: 44px;
+
+					&:hover {
+					.gradient(top, #ee2042, lighten(#d81838, 5%));	
+					}
+
+					&:active {
+						.gradient(top, darken(#d81838, 5%), darken(#d81838, 5%));
+					}
+				}
+			}
+		}
+	}
+}
+
+/*=====  End of Страница корзины  ======*/
 
 
 
