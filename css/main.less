@@ -132,6 +132,39 @@ h2 {
 /*=====  End of Классы для заголовков и тд  ======*/
 
 
+/*=============================================
+=            Стили для placeholder            =
+=============================================*/
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: bold; text-transform: uppercase;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: bold; text-transform: uppercase;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: bold; text-transform: uppercase;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: bold; text-transform: uppercase;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: bold; text-transform: uppercase;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: bold; text-transform: uppercase;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: bold; text-transform: uppercase;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: bold; text-transform: uppercase;}
+
+.delivery-field::-webkit-input-placeholder       {font-size: 18px;}
+.delivery-field::-moz-placeholder                {font-size: 18px;}
+.delivery-field:-moz-placeholder                 {font-size: 18px;}
+.delivery-field:-ms-input-placeholder            {font-size: 18px;}
+.delivery-field:focus::-webkit-input-placeholder {font-size: 18px;}
+.delivery-field:focus::-moz-placeholder          {font-size: 18px;}
+.delivery-field:focus:-moz-placeholder           {font-size: 18px;}
+.delivery-field:focus:-ms-input-placeholder      {font-size: 18px;}
+
+textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: 700; text-transform: uppercase;}
+textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: 700; text-transform: uppercase;}
+textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: 700; text-transform: uppercase;}
+textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: 700; text-transform: uppercase;}
+textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: 700; text-transform: uppercase;}
+textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: 700; text-transform: uppercase;}
+textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: bold; text-transform: uppercase;}
+textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease; color: #222222; font-size: 12px; font-weight: bold; text-transform: uppercase;}
+
+/*=====  End of Стили для placeholder  ======*/
+
 
 
 /*----------  Кнопки  ----------*/
@@ -261,7 +294,7 @@ body {
 		height: 365px;
 		top: 600px;
 		left: 0;
-		z-index: 0;;
+		z-index: 0;
 	}
 
 	.flowers--right {
@@ -271,7 +304,7 @@ body {
 		height: 365px;
 		top: 1320px;
 		right: 0;
-		z-index: 0;;
+		z-index: 0;
 	}
 }
 
@@ -471,7 +504,7 @@ body {
 	left: 0;
 	right: 0;
 	opacity: 1;
-	z-index: 999;;
+	z-index: 999;
 }
 
 .owl-theme .owl-controls .owl-page span {
@@ -763,7 +796,7 @@ body {
 				max-width: 82px;
 				max-height: 78px;
 				display: block;
-				margin-top: 18px;;
+				margin-top: 18px;
 			}
 
 		}
@@ -1315,13 +1348,16 @@ body {
 			border: 1px solid rgba(218, 218, 218, 0.5);
 			margin-bottom: 20px;
 			position: relative;
+			-webkit-box-shadow: 0px 4px 10px 0px rgba(50, 50, 50, 0.75);
+			-moz-box-shadow:    0px 4px 10px 0px rgba(50, 50, 50, 0.75);
+			box-shadow:         0px 4px 10px 0px rgba(50, 50, 50, 0.75);
 			.photo {
 				text-align: center;
 				background: #fff;
 				height: 230px;
 				line-height: 16;
 				.photo__img {
-					max-width: 220px;;
+					max-width: 220px;
 				}
 			}
 
@@ -1329,7 +1365,7 @@ body {
 				color: #fff;
 				font-size: 20px;
 				padding-top: 75px;
-				padding-left: 50px;;;
+				padding-left: 50px;
 
 				.type {
 					display: block;
@@ -1338,11 +1374,16 @@ body {
 				.name {
 					display: block;
 				}
+
+				.item__link {
+					line-height: 1.8;
+				}
 			}
 
 			.item__link {
 				color: #fff;
-				line-height: 1.8;
+				line-height: 220px;
+				display: block;
 			}
 
 			.price {
@@ -1371,10 +1412,11 @@ body {
 					font-weight: bold;
 					color: #222222;
 					height: 32px;
+					overflow: hidden;
 				}
 
 				.ui-spinner-up {
-					background: url("../img/spinner-nav-up.jpg") no-repeat;
+					background: url(../img/spinner-nav-up.png) no-repeat;
 					background-position: center center;
 					width: 30px;
 					height: 32px;
@@ -1383,10 +1425,16 @@ body {
 				    left: 0px;
 				    top: 0;
 				    cursor: pointer;
+					transition: background 0.2s;
+				    &:hover {
+				    	background: url(../img/spinner-nav-up.png) no-repeat lighten(#f32144, 10%);
+				    	background-position: center center;
+				    	border-radius: 4px 0px 0 4px;
+				    }
 				}
 
 				.ui-spinner-down {
-					background: url("../img/spinner-nav-down.jpg") no-repeat;
+					background: url("../img/spinner-nav-down.png") no-repeat;
 					background-position: center center;
 					width: 30px;
 					height: 32px;
@@ -1395,6 +1443,12 @@ body {
 				    right: 0px;
 				    top: 0%;
 				    cursor: pointer;
+					transition: background 0.2s;
+				    &:hover {
+				    	background: url("../img/spinner-nav-down.png") no-repeat lighten(#f32144, 10%);
+				    	background-position: center center;
+				    	border-radius: 0px 4px 4px 0px;
+				    }
 				}
 			}
 
@@ -1422,7 +1476,10 @@ body {
 				font-weight: bold;
 				height: 50px;
 				line-height: 1.5;
-				text-align: right;;
+				text-align: right;
+				-moz-box-shadow: 0 4px 10px 0 rgba(50,50,50,.75);
+				box-shadow: 0 4px 10px 0 rgba(50,50,50,.75);
+				-webkit-box-shadow: 0 4px 10px 0 rgba(50,50,50,.75);
 				.total__text {
 					color: #fff;
 					font-size: 20px;
@@ -1461,6 +1518,264 @@ body {
 						.gradient(top, darken(#d81838, 5%), darken(#d81838, 5%));
 					}
 				}
+			}
+		}
+	}
+
+
+	.cart-addition {
+		.item {
+			width: 220px;
+			height: 240px;
+			background: #fff;
+			border-radius: 5px;
+			text-align: center;
+
+			.photo {
+				width: 220px;
+				height: 120px;
+				line-height: 10;
+
+				.photo__img {
+					max-width: 220px;
+					max-height: 120px;
+				}
+			}
+
+			.title {
+				color: #222222;
+				font-size: 14px;
+				text-transform: uppercase;
+				font-weight: bold;
+				margin-top: 10px;
+			}
+
+			.price {
+				font-family: @lobster;
+				margin-bottom: 5px;
+				.value {
+					color: #f32144;
+					font-size: 25px;
+				}
+
+				.rub {
+					color: #24292f;
+					font-size: 18px;
+				}
+			}
+
+			.btn-wrapper {
+				overflow: hidden;
+				background: #aecfd2;
+				.border-radius(3px);
+				padding: 3px;
+				width: 184px;
+				margin: 0 auto;
+				.btn__buy {
+					height: 32px;
+					color: #fff;
+					font-size: 20px;
+					font-family: @lobster;
+					text-align: center;
+					.border-radius(4px);
+					.gradient(top, #7cc21c, #1e9934);
+					.green--btn;
+					display: block;
+					text-decoration: none;
+					width: 178px;
+					border: none;
+					border-bottom: 1px solid #05620b;
+					text-shadow: 0 1px 0 #000;
+					&:hover {
+						.gradient(top, #7cc21c, lighten(#1e9934, 5%));	
+					}
+
+					&:active {
+						.gradient(top, darken(#1e9934, 5%), darken(#1e9934, 5%));
+					}
+				}
+
+			}
+
+		}
+	}
+
+	.shipping-form {
+		font-family: @exo2;
+		.brown-block {
+			background: #3a2214;
+			border-radius: 5px;
+			text-align: center;
+			padding: 25px 30px;
+			margin-top: 20px;
+			webkit-box-shadow: 0 4px 10px 0 rgba(50,50,50,.75);
+			-moz-box-shadow: 0 4px 10px 0 rgba(50,50,50,.75);
+			box-shadow: 0 4px 10px 0 rgba(50,50,50,.75);
+			border: 1px solid rgba(218,218,218,.5);
+		}
+
+		.title {
+			color: #ffffff;
+			font-size: 20px;
+			text-align: left;
+			margin-bottom: 20px;
+		}
+
+		.field {
+			background: #fff;
+			height: 30px;
+			border-radius: 4px;
+			margin: 0 auto;
+			border: none;
+			margin-bottom: 20px;
+			padding-left: 10px;
+			width: 100%;
+		}
+
+		.textarea {
+			background: #fff;
+			width: 100%;
+			height: 80px;
+			padding-top: 10px;
+			border-radius: 4px;
+			margin: 0 auto;
+			border: none;
+			resize: none;
+			padding-left: 10px;
+			text-align: left;
+		}
+
+		.radio-btn-wrapper {
+			clear: both;
+			line-height: 1;
+			label.radio-btn {
+			    display: inline-block;
+			    cursor: pointer;
+			    float: left;
+			    margin-left: 0px;
+			    margin-right: 12px;
+			    line-height: 2;
+			    margin-bottom: 26px;
+			}
+
+			label.radio-btn > input[type=checkbox] {
+				display: none;
+			}
+
+			label.radio-btn > input[type=radio] {
+				display: none;
+			}
+
+			label.radio-btn > span {
+			    display: block;
+			    width: 24px;
+			    height: 24px;
+			    background: #fff;
+			    border-radius: 50%;
+			    float: left;
+			}
+
+			label.radio-btn input[type=checkbox]:checked + span {
+			    background: url("../img/radio-btn-checked.png") no-repeat center center #fff;
+			}
+
+			label.radio-btn input[type=radio]:checked + span {
+			    background: url("../img/radio-btn-checked.png") no-repeat center center #fff;
+			}
+
+			.name {
+				margin-left: 10px;
+				color: #fff;
+				font-size: 12px;
+				text-transform: uppercase;
+				text-align: left;
+				line-height: 2;
+
+				&.adress {
+					line-height: 1.5;
+				}
+			}
+			
+			.delivery-value {
+				color: #f32144;
+				font-size: 20px;
+				font-weight: bold;
+			}
+		}
+
+		.delivery-total-summ {
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			font-weight: bold;
+			padding-top: 40px;
+			margin-bottom: 38px;
+			.value {
+				font-size: 30px;
+				color: #f32144;
+
+			}
+
+			.annonce-text {
+
+			}
+		}
+
+		.btn-wrapper {
+			overflow: hidden;
+			margin-top: 20px;
+			background: rgba(0, 0, 0, 0.5);
+			.border-radius(3px);
+			padding: 3px;
+			width: 300px;
+			margin: 0 auto;
+
+			.finally__order__btn {
+				height: 44px;
+				color: #fff;
+				font-size: 25px;
+				font-family: @lobster;
+				text-align: center;
+				.border-radius(4px);
+				.gradient(top, #7cc21c, #1e9934);
+				.green--btn;
+				display: block;
+				text-decoration: none;
+				width: 100%;
+				border: none;
+				border-bottom: 1px solid #05620b;
+				text-shadow: 0 1px 0 #000;
+				&:hover {
+					.gradient(top, #7cc21c, lighten(#1e9934, 5%));	
+				}
+
+				&:active {
+					.gradient(top, darken(#1e9934, 5%), darken(#1e9934, 5%));
+				}
+			}
+
+		}
+
+		.delivery-address {
+			
+			.radio-btn-wrapper {
+				.name {
+					line-height: 1;
+				}
+			}
+
+			.textarea {
+				height: 90px;
+			}
+
+			.delivery-field {
+				height: 90px;
+				border-radius: 4px;
+				width: 100%;
+				text-align: center;
+				font-size: 20px;
+				font-weight: bold;
+				cursor: pointer;
 			}
 		}
 	}

@@ -92,7 +92,32 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+ 
+  $(".cart-addition").owlCarousel({
+
+      items : 4,
+      navigation : true,
+      navigationText: false,
+      pagination: false
+  });
+ 
+});
+
+$(document).ready(function() {
 
 $( ".spinner" ).spinner();
 
 });
+
+$(document).ready(function() {
+  $('#deliverty-date').datetimepicker({
+      locale: 'ru',
+      format: 'DD/MM/YYYY'
+  });
+
+  $('#deliverty-time').datetimepicker({
+      locale: 'ru',
+      format: 'LT'
+  });
+});
+
