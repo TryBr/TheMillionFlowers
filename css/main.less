@@ -337,6 +337,7 @@ body {
 
 .content {
 	position: relative;
+	z-index: 0;
 	&.text-page {
 		.container940 {
 			background: #fff0eb;
@@ -412,7 +413,7 @@ body {
 		height: 365px;
 		top: 600px;
 		left: 0;
-		z-index: 0;
+		z-index: 1;
 	}
 
 	.flowers--right {
@@ -422,7 +423,7 @@ body {
 		height: 365px;
 		top: 1320px;
 		right: 0;
-		z-index: 0;
+		z-index: 1;
 	}
 }
 
@@ -450,9 +451,13 @@ body {
     margin: 0 auto;
     width: 630px;
     float: none;
+    display: table;
 	.top-menu__li {
 		font-family: @bebasBold;
 		text-align: center;
+		display: table-cell;
+		text-shadow: none;
+		padding: 0 7px;
 	}
 
 	.top-menu__li__link {
@@ -460,10 +465,12 @@ body {
 		font-size: 18px;
 		text-decoration: none;
 		font-weight: 700;
-
+		text-shadow: none;
+		padding: 14px 0px;
 		&:hover{
 		color: @green;
 		background: none;
+		text-shadow: none;
 		}
 	}
 
@@ -1150,10 +1157,11 @@ body {
 		padding: 0;
 		margin: 0;
 		margin-top: 6px;
+		display: table;
 
 	.bottom-menu__li {
 		font-family: @bebasBold;
-		display: inline-block;
+		display: table-cell;
 	}
 
 	.bottom-menu__li__link {
@@ -1364,11 +1372,17 @@ body {
 		.options-list {
 			width: 100%;
 			margin-top: 10px;
+			border: none;
 			.option-row {
 			    background: rgba(115, 82, 62, 0.5);
 			    border-bottom: 1px solid rgba(72,50,37,0.90);
 			    color: #fff;
 				transition: background 0.2s;
+
+				td {
+					border: none;
+					padding: 10px 0px;
+				}
 			    &:nth-child(odd) {
 			    	background: rgba(141, 100, 75, 0.5)
 			    }
@@ -1638,7 +1652,7 @@ body {
 					text-align: center;
 					width: 150px;
 					height: 44px;
-
+					white-space: nowrap;
 					&:hover {
 					.gradient(top, #ee2042, lighten(#d81838, 5%));	
 					}
