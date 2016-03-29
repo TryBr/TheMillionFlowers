@@ -79,13 +79,46 @@
 
 /*=====  End of Подключаемые шрифты  ======*/
 
-#scrollUp {
-    background-image: url("../img/top.png");
-    bottom: 20px;
-    right: 20px;
-    width: 38px;
-    height: 38px;
+/*==============================
+=            TO TOP            =
+==============================*/
+
+.cd-top {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  /* image replacement properties */
+  overflow: hidden;
+  white-space: nowrap;
+  background: url("../img/to-top.png") no-repeat #ff689c center center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
 }
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+}
+.no-touch .cd-top:hover {
+  opacity: 1;
+}
+
+
+/*=====  End of TO TOP  ======*/
 
 /*----------  Переменные  ----------*/
 
@@ -1873,6 +1906,17 @@ body {
 				font-size: 20px;
 				font-weight: bold;
 				cursor: pointer;
+			}
+		}
+
+		.giveAnother__field {
+			transition: all 0.5s;
+			&.disabled {
+				opacity: 0.1;
+			}
+
+			&.enabled {
+				opacity: 1;
 			}
 		}
 	}

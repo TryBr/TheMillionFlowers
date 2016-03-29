@@ -457,9 +457,9 @@
             <div class="col-md-6">
               <div class="my-details brown-block">
                 <div class="title">Мои данные (заказчик):</div>
-                <input type="text" class="field" placeholder="Введите свое имя">
-                <input type="text" class="field" placeholder="Введите номер вашего телефона">
-                <input type="text" class="field" placeholder="Введите адрес электронной почты">
+                <input type="text" class="field" placeholder="Введите свое имя" required>
+                <input type="text" class="field phone__field" placeholder="Введите номер вашего телефона" required>
+                <input type="text" class="field" placeholder="Введите адрес электронной почты" required>
                 <textarea class="textarea" name="free-card" placeholder="Введите текст бесплатной открытки"></textarea>
               </div>
             </div>
@@ -473,9 +473,9 @@
                     </label>
                     <div class="name">Подарить букет другому человеку?</div>
                 </div>
-                <input type="text" class="field disabled" placeholder="Введите имя получателя">
-                <input type="text" class="field disabled" placeholder="Введите номер телефона получателя">
-                <textarea class="textarea disabled" name="add-pojelaniya" placeholder="Дополнительные пожелания"></textarea>
+                <input type="text" class="field giveAnother__field disabled" placeholder="Введите имя получателя" disabled="true">
+                <input type="text" class="field giveAnother__field phone__field disabled" placeholder="Введите номер телефона получателя" disabled="true">
+                <textarea class="textarea giveAnother__field disabled" name="add-pojelaniya" placeholder="Дополнительные пожелания" disabled="true"></textarea>
               </div>
             </div>
             <div class="col-md-12 clearfix">
@@ -779,10 +779,12 @@
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/owl.carousel.min.js"></script>
+        <script src="js/vendor/wow.min.js"></script>
         <script src="js/vendor/likely.js"></script>
         <script src="js/vendor/jquery-ui.min.js"></script>
         <script src="js/vendor/moment-with-locales.min.js"></script>
         <script src="js/vendor/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/vendor/jquery.maskedinput.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

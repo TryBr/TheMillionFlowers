@@ -125,23 +125,58 @@ $(document).ready(function() {
   });
 });
 
+
+//animation effects
 new WOW().init();
 
-$(function () {
-    $.scrollUp({
-        scrollName: 'scrollUp',      // Element ID
-        scrollDistance: 300,         // Distance from top/bottom before showing element (px)
-        scrollFrom: 'top',           // 'top' or 'bottom'
-        scrollSpeed: 10,            // Speed back to top (ms)
-        easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
-        animation: 'fade',           // Fade, slide, none
-        animationSpeed: 100,         // Animation speed (ms)
-        scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
-        scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
-        scrollText: 'Scroll to top', // Text for element, can contain HTML
-        scrollTitle: false,          // Set a custom <a> title if required.
-        scrollImg: false,            // Set true to use image
-        activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-        zIndex: 2147483647           // Z-Index for the overlay
-    });
+jQuery(document).ready(function($){
+  // browser window scroll (in pixels) after which the "back to top" link is shown
+  var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+  //hide or show the "back to top" link
+  $(window).scroll(function(){
+    ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+    if( $(this).scrollTop() > offset_opacity ) { 
+      $back_to_top.addClass('cd-fade-out');
+    }
+  });
+
+  //smooth scroll to top
+  $back_to_top.on('click', function(event){
+    event.preventDefault();
+    $('body,html').animate({
+      scrollTop: 0 ,
+      }, scroll_top_duration
+    );
+  });
+
+});
+
+
+//masked input
+$(document).ready(function() {
+ 
+  $(".phone__field").mask("+7 (999)-999-99-99");
+ 
+});
+
+
+
+//Give Another Check
+$('#giveAnother').click(function(){
+    if (this.checked) {
+      $('.giveAnother__field').attr('disabled', false);
+      $('.giveAnother__field').removeClass('disabled');
+      $('.giveAnother__field').addClass('enabled');
+    } else {
+      $('.giveAnother__field').attr('disabled', true);
+      $('.giveAnother__field').removeClass('enabled');
+      $('.giveAnother__field').addClass('disabled');
+    }
 });
