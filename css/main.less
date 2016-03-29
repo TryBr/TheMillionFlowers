@@ -2000,14 +2000,19 @@ body {
 		    background: rgba(42,147,37,.9);
 		}
 
-    	.top-menu .top-menu__li.li_separator {
-        	display: none;
-        }
-
        .top-menu {
 		    margin: 0 auto;
 		    width: auto;
 		    float: none;
+
+			.top-menu__li {
+  			display: block;
+			&.li_separator {
+				display: none;
+				}
+
+			}
+
 		}
 
 		.footer:before {
