@@ -14,7 +14,11 @@ $(document).ready(function() {
     });
 
     sync2.owlCarousel({
-        items : 3,
+        items : 3, //10 items above 1000px browser width
+        itemsDesktop : [1000,5], //5 items between 1000px and 901px
+        itemsDesktopSmall : [900, 0], // betweem 900px and 601px
+        itemsTablet: [600,0 ], //2 items between 600 and 0
+        itemsMobile : [400, 0], // itemsMobile disabled - inherit from itemsTablet option
         pagination:false,
         responsiveRefreshRate : 100,
         afterInit : function(el){

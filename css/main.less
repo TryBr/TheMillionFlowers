@@ -1,4 +1,5 @@
-/* Стили для главной страницы с разделами */
+
+    /* Стили для главной страницы с разделами */
 
 .main-list {
 	text-align: center;
@@ -295,6 +296,70 @@ body {
 
 .collapsed-menu__title {
 	display: none;
+}
+
+.content {
+	position: relative;
+	&.text-page {
+		.container940 {
+			background: #fff0eb;
+			border-radius: 5px;
+		}
+	}
+
+	ul {
+		list-style: none;
+		padding: 10px;
+		li {
+			position: relative;
+			padding-left: 30px;
+			margin-bottom: 8px;
+			&:before {
+				content: '';
+				background: url("../img/list-item-icon.png") no-repeat;
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				left: 0;
+				top: 2px;
+			}
+		}
+	}
+
+	table {
+		text-align: left;
+		width: 100%;
+		border: 1px solid #cfcfcf;
+		margin-bottom: 20px;
+		tr {
+			transition: background 0.2s;
+			th {
+				background: #24150c;
+				color: #ffffff;
+				vertical-align: middle;
+				font-size: 12px;
+				padding: 15px 10px;
+			}
+
+			td {
+				color: #222222;
+				padding: 15px 10px;
+				border-right: 1px solid #cfcfcf;
+			}
+
+			&:nth-child(odd) {
+				background: #e9dad4;
+
+				&:hover {
+					background: lighten(#e9dad4, 1%);
+				}
+			}
+
+			&:hover {
+				background: #e9dad4;
+			}
+		}
+	}
 }
 
 /*=======================================
@@ -1159,9 +1224,10 @@ body {
 
 	.card-gallery {
 		background: url("../img/gallery-bg.png") no-repeat center center;
-		height: 540px;
 		padding: 46px 80px;
-
+		clear: both;
+		margin-bottom: 30px;
+		height: 540px;
 
 		#sync1 .item{
 		    margin: 5px;
@@ -1174,21 +1240,24 @@ body {
 
 		#sync1 .owl-item {
 			text-align: center;
+
+			img {
+				max-width: 100%;
+			}
 		}
 
 		#sync2 .item{
 		    margin: 5px;
-		    color: #FFF;
 		    text-align: center;
 		    cursor: pointer;
-		    width: 138px;
-		    height: 99px;
 		    border: 1px solid #e0d0ba;
+		    background: #FFF;
+		    overflow: hidden;
 		}
 
 		#sync2 .item img {
-		    max-width: 138px;
-		    max-height: 95px;
+		    max-width: 100%;
+		    max-height: 100%;
 		}
 
 		#sync2 .item h1{
@@ -1229,6 +1298,7 @@ body {
 	}
 
 	.share {
+		clear: both;
 		.title {
 			font-size: 20px;
 			text-transform: uppercase;
@@ -1900,9 +1970,70 @@ body {
 			max-width: 100%;
 		}
 
+		.product-card-wrapper .card-gallery {
+			padding: 0px;
+			height: 100%;
+			background: #fff;
+			border-radius: 4px;
+		}
+
+		#sync2 .item {
+		    margin: 0 auto !important;
+		    text-align: center !important;
+		}
+
+		.product-card-wrapper .card-gallery #sync1 .owl-buttons .owl-prev {
+		  // top: -125px;
+		  // left: 2px;
+		  display: none;
+		}
+		 
+		.product-card-wrapper .card-gallery #sync1 .owl-buttons .owl-next {
+		  // top: -125px;
+		  // right: 2px;
+		  display: none;
+		}
+
+		#sync2 {
+			display: none !important;
+		}
+
     }
 
- /* Large Devices, Wide Screens */
+     /* Large Devices, Wide Screens */
+
+    @media only screen and (width : 1024px) {
+
+		.floating-flowers {
+			display: none;
+		}
+
+		.footer {
+			&:before {
+				content: '';
+				background: none;
+			}
+
+		}
+
+		.navbar-collapse {
+			background: none;
+		}
+
+		.collapsed-menu__title {
+			display: none;
+		}    
+
+		.nav>li>a {
+		    padding: 15px 15px;
+		}
+
+		.categories-menu {
+			background: none !important;
+		}
+
+    }
+
     @media only screen and (max-width : 1200px) {
     }
 
@@ -1913,6 +2044,14 @@ body {
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
+
+		.bottom--navbar {
+			display: none;
+		}
+        
+		.nav > li > a {
+		    padding: 15px 23px;
+		}
 
         .navbar-collapse {
         	box-shadow: none;
@@ -2088,6 +2227,31 @@ body {
 		    }
 		}
 
+
+	@media (min-width: 768px) {
+	   .collapsed-menu__title {
+	   		display: none;
+	   }
+
+	   .navbar {
+	   		border-radius: 0px;
+	   }
+
+	   .navbar-collapse {
+	   		background: none;
+	   }
+
+	   .categories-menu {
+	   	background: none;
+	   }
+
+	   	.product-card-wrapper .card-gallery {
+			padding: 100px;
+		}
+
+	}
+
+
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
 
@@ -2099,4 +2263,6 @@ body {
     }
 
 
+
 }
+
