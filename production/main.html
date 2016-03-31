@@ -18,21 +18,21 @@
     <link rel="stylesheet" href="production/styles.min.css">
 </head>
 
-<body class="inner-page">
+<body no-bg>
     <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <!-- Плавающие цветы -->
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    
     <div class="floating-flowers">
         <div class="flowers--left">
         </div>
         <div class="flowers--right">
         </div>
     </div>
-    <!-- Конец плавающих цветов -->
-    <!-- Шапка -->
+    
+    
     <header class="header">
-        <!-- Верхнее меню -->
+        
         <nav class="navbar top--navbar" role="navigation">
             <div class="container">
                 <div class="navbar-header">
@@ -63,8 +63,8 @@
                 </div>
             </div>
         </nav>
-        <!-- Конец верхнего меню -->
-        <!-- Информация в шапке -->
+        
+        
         <div class="container940 container">
             <div class="row">
                 <div class="col-md-4 col-xs-12 col-sm-12">
@@ -100,10 +100,25 @@
                 </div>
             </div>
         </div>
-        <!-- Конец информации в шапке -->
+        
     </header>
-    <!-- Конец Шапки -->
-    <!-- Меню категорий -->
+    
+    
+    <div class="slider-wrapper">
+        <div class="container940">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <div class="item"><img src="img/slider-img.jpg" alt=""></div>
+                        <div class="item"><img src="img/slider-img.jpg" alt=""></div>
+                        <div class="item"><img src="img/slider-img.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
     <div class="categories-menu">
         <div class="container940">
             <nav class="navbar" role="navigation">
@@ -127,8 +142,8 @@
             </nav>
         </div>
     </div>
-    <!-- Конец меню категорий -->
-    <!-- Фильтры -->
+    
+    
     <div class="item-filters">
         <div class="container940">
             <div class="row">
@@ -138,7 +153,7 @@
                 <form class="filters-form" action="">
                     <div class="col-md-3 col-xs-12 col-sm-12">
                         <select class="filter-select form-control" name="Кому">
-                            <option disabled selected>Кому</option>
+                            <option disabled="disabled" selected="selected">Кому</option>
                             <option>Девушке/Женщине</option>
                             <option>Коллективу</option>
                             <option>Мужчине</option>
@@ -149,7 +164,7 @@
                     </div>
                     <div class="col-md-3 col-xs-12 col-sm-12">
                         <select class="filter-select form-control">
-                            <option disabled selected>Букет с</option>
+                            <option disabled="disabled" selected="selected">Букет с</option>
                             <option>Альстромериями</option>
                             <option>Герберами</option>
                             <option>Ирисами</option>
@@ -161,7 +176,7 @@
                     </div>
                     <div class="col-md-3 col-xs-12 col-sm-12">
                         <select class="filter-select form-control">
-                            <option disabled selected>Событие</option>
+                            <option disabled="disabled" selected="selected">Событие</option>
                             <option>Пятница</option>
                             <option>8 марта</option>
                             <option>Китайский новый год</option>
@@ -169,7 +184,7 @@
                     </div>
                     <div class="col-md-3 col-xs-12 col-sm-12">
                         <select class="filter-select form-control">
-                            <option disabled selected>Цена</option>
+                            <option disabled="disabled" selected="selected">Цена</option>
                             <option>от 200000000000000000000000000000000</option>
                             <option>от 4000</option>
                             <option>от 10000</option>
@@ -179,348 +194,149 @@
             </div>
         </div>
     </div>
-    <!-- Конец фильтров -->
-    <!-- Хлебные крошки -->
-    <div class="breadcrumbs">
-        <div class="container940">
-            <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <ul class="breadcrumbs-list">
-                        <li class="breadcrumb__item">
-                            <a href="#" class="breadcrumb__link">Главная</a>
-                        </li>
-                        <li class="breadcrumb__item separator">
-                            -
-                        </li>
-                        <li class="breadcrumb__item">
-                            Каталог
-                        </li>
-                    </ul>
+    
+    
+    <main class="content">
+        
+        <div class="catalog-items-list">
+            <div class="container940">
+                <div class="row">
+                    <div class="col-md-4 col-xs-12 col-sm-6">
+                        <div class="catalog-item">
+                            <div class="item__title">
+                                Хороший вечер
+                            </div>
+                            <div class="item-photo-wrapper">
+                                <img src="img/item-photo-1.jpg" alt="" class="item__photo img-responsive">
+                            </div>
+                            <div class="item__price">
+                                5 000
+                                <div class="price__ruble">
+                                    pуб.
+                                </div>
+                            </div>
+                            <div class="item-addToCart-wrapper">
+                                <a href="" class="item__atc__btn">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 col-sm-6">
+                        <div class="catalog-item">
+                            <div class="item__title">
+                                Отличный день
+                            </div>
+                            <div class="item-photo-wrapper">
+                                <img src="img/item-photo-2.jpg" alt="" class="item__photo img-responsive">
+                            </div>
+                            <div class="item__price">
+                                5 000
+                                <div class="price__ruble">
+                                    pуб.
+                                </div>
+                            </div>
+                            <div class="item-addToCart-wrapper">
+                                <a href="" class="item__atc__btn">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 col-sm-6">
+                        <div class="catalog-item">
+                            <div class="item__title">
+                                Классное утро
+                            </div>
+                            <div class="item-photo-wrapper">
+                                <img class="img-responsive" src="img/item-photo-3.jpg" alt="" class="item__photo img-responsive">
+                            </div>
+                            <div class="item__price">
+                                5 000
+                                <div class="price__ruble">
+                                    pуб.
+                                </div>
+                            </div>
+                            <div class="item-addToCart-wrapper">
+                                <a href="" class="item__atc__btn">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 col-sm-6">
+                        <div class="catalog-item">
+                            <div class="item__title">
+                                Хороший вечер
+                            </div>
+                            <div class="item-photo-wrapper">
+                                <img class="img-responsive" src="img/item-photo-4.jpg" alt="" class="item__photo img-responsive">
+                            </div>
+                            <div class="item__price">
+                                5 000
+                                <div class="price__ruble">
+                                    pуб.
+                                </div>
+                            </div>
+                            <div class="item-addToCart-wrapper">
+                                <a href="" class="item__atc__btn">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 col-sm-6">
+                        <div class="catalog-item">
+                            <div class="item__title">
+                                Хороший вечер
+                            </div>
+                            <div class="item-photo-wrapper">
+                                <img src="img/item-photo-5.jpg" alt="" class="item__photo img-responsive">
+                            </div>
+                            <div class="item__price">
+                                5 000
+                                <div class="price__ruble">
+                                    pуб.
+                                </div>
+                            </div>
+                            <div class="item-addToCart-wrapper">
+                                <a href="" class="item__atc__btn">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 col-sm-6">
+                        <div class="catalog-item">
+                            <div class="item__title">
+                                Хороший вечер
+                            </div>
+                            <div class="item-photo-wrapper">
+                                <img src="img/item-photo-6.jpg" alt="" class="item__photo img-responsive">
+                            </div>
+                            <div class="item__price">
+                                5 000
+                                <div class="price__ruble">
+                                    pуб.
+                                </div>
+                            </div>
+                            <div class="item-addToCart-wrapper">
+                                <a href="" class="item__atc__btn">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Конец хлебных крошек -->
-    <!-- Корзина -->
-    <div class="cart-container">
-        <div class="container940">
-            <div class="row">
-                <h2>Корзина</h2>
-                <div class="cart-items clearfix">
-                    <div class="item clearfix">
-                        <div class="photo col-md-3">
-                            <a href="" class="item__link"><img class="photo__img" src="img/product-card-photo.png" alt=""></a>
-                        </div>
-                        <div class="title col-md-3">
-                            <a href="" class="item__link">
-                                <span class="type">Букет</span>
-                                <span class="name">“Хороший вечер”</span>
-                            </a>
-                        </div>
-                        <div class="value col-md-2">
-                            <input class="spinner" min="1">
-                        </div>
-                        <div class="price col-md-3">
-                            3 480<span class="rub">р.</span>
-                        </div>
-                        <div class="delete col-md-1">
-                            <button class="delete__btn"></button>
-                        </div>
-                    </div>
-                    <div class="item clearfix">
-                        <div class="photo col-md-3">
-                            <a href="" class="item__link"><img class="photo__img" src="img/product-card-photo.png" alt=""></a>
-                        </div>
-                        <div class="title col-md-3">
-                            <a href="" class="item__link">
-                                <span class="type">Букет</span>
-                                <span class="name">“Хороший вечер”</span>
-                            </a>
-                        </div>
-                        <div class="value col-md-2">
-                            <input class="spinner" min="1">
-                        </div>
-                        <div class="price col-md-3">
-                            3 480<span class="rub">р.</span>
-                        </div>
-                        <div class="delete col-md-1">
-                            <button class="delete__btn"></button>
-                        </div>
-                    </div>
-                    <div class="item clearfix">
-                        <div class="photo col-md-3">
-                            <a href="" class="item__link"><img class="photo__img" src="img/product-card-photo.png" alt=""></a>
-                        </div>
-                        <div class="title col-md-3">
-                            <a href="" class="item__link">
-                                <span class="type">Букет</span>
-                                <span class="name">“Хороший вечер”</span>
-                            </a>
-                        </div>
-                        <div class="value col-md-2">
-                            <input class="spinner" min="1">
-                        </div>
-                        <div class="price col-md-3">
-                            3 480<span class="rub">р.</span>
-                        </div>
-                        <div class="delete col-md-1">
-                            <button class="delete__btn"></button>
-                        </div>
-                    </div>
-                    <div class="total-info">
-                        <div class="result col-md-9">
-                            <span class="total__text">Итого:</span>
-                            <span class="total__value">10 440</span>
-                        </div>
-                        <div class="to-order-wrapper col-md-2 col-md-offset-1">
-                            <button class="to__order__btn">Оформить доставку</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Приятные дополнения -->
-            <div class="row">
-                <h2>Приятное дополнение</h2>
-                <div id="cart-addition-1" class="cart-addition owl-theme wow fadeIn">
-                    <div class="item">
-                        <div class="photo">
-                            <img src="img/addition-item-photo.jpg" alt="" class="photo__img">
-                        </div>
-                        <div class="title">
-                            Конфеты коркунов
-                        </div>
-                        <div class="price">
-                            <span class="value">800</span>
-                            <span class="rub">р.</span>
-                        </div>
-                        <div class="btn-wrapper">
-                            <button class="btn__buy">Добавить</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="photo">
-                            <img src="img/addition-item-photo.jpg" alt="" class="photo__img">
-                        </div>
-                        <div class="title">
-                            Конфеты коркунов
-                        </div>
-                        <div class="price">
-                            <span class="value">800</span>
-                            <span class="rub">р.</span>
-                        </div>
-                        <div class="btn-wrapper">
-                            <button class="btn__buy">Добавить</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="photo">
-                            <img src="img/addition-item-photo.jpg" alt="" class="photo__img">
-                        </div>
-                        <div class="title">
-                            Конфеты коркунов
-                        </div>
-                        <div class="price">
-                            <span class="value">800</span>
-                            <span class="rub">р.</span>
-                        </div>
-                        <div class="btn-wrapper">
-                            <button class="btn__buy">Добавить</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="photo">
-                            <img src="img/addition-item-photo.jpg" alt="" class="photo__img">
-                        </div>
-                        <div class="title">
-                            Конфеты коркунов
-                        </div>
-                        <div class="price">
-                            <span class="value">800</span>
-                            <span class="rub">р.</span>
-                        </div>
-                        <div class="btn-wrapper">
-                            <button class="btn__buy">Добавить</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="photo">
-                            <img src="img/addition-item-photo.jpg" alt="" class="photo__img">
-                        </div>
-                        <div class="title">
-                            Конфеты коркунов
-                        </div>
-                        <div class="price">
-                            <span class="value">800</span>
-                            <span class="rub">р.</span>
-                        </div>
-                        <div class="btn-wrapper">
-                            <button class="btn__buy">Добавить</button>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="more-btn-wrapper">
+                            <button class="more__btn">
+                                Еще
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <h2>Добавить мягкую игрушку</h2>
-                <div id="cart-addition-1" class="cart-addition owl-theme wow fadeIn">
-                    <div class="item">
-                        <div class="photo">
-                            <img src="img/addition-item-photo-2.jpg" alt="" class="photo__img">
-                        </div>
-                        <div class="title">
-                            Конфеты коркунов
-                        </div>
-                        <div class="price">
-                            <span class="value">800</span>
-                            <span class="rub">р.</span>
-                        </div>
-                        <div class="btn-wrapper">
-                            <button class="btn__buy">Добавить</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="photo">
-                            <img src="img/addition-item-photo-2.jpg" alt="" class="photo__img">
-                        </div>
-                        <div class="title">
-                            Конфеты коркунов
-                        </div>
-                        <div class="price">
-                            <span class="value">800</span>
-                            <span class="rub">р.</span>
-                        </div>
-                        <div class="btn-wrapper">
-                            <button class="btn__buy">Добавить</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="photo">
-                            <img src="img/addition-item-photo-2.jpg" alt="" class="photo__img">
-                        </div>
-                        <div class="title">
-                            Конфеты коркунов
-                        </div>
-                        <div class="price">
-                            <span class="value">800</span>
-                            <span class="rub">р.</span>
-                        </div>
-                        <div class="btn-wrapper">
-                            <button class="btn__buy">Добавить</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="photo">
-                            <img src="img/addition-item-photo-2.jpg" alt="" class="photo__img">
-                        </div>
-                        <div class="title">
-                            Конфеты коркунов
-                        </div>
-                        <div class="price">
-                            <span class="value">800</span>
-                            <span class="rub">р.</span>
-                        </div>
-                        <div class="btn-wrapper">
-                            <button class="btn__buy">Добавить</button>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="photo">
-                            <img src="img/addition-item-photo-2.jpg" alt="" class="photo__img">
-                        </div>
-                        <div class="title">
-                            Конфеты коркунов
-                        </div>
-                        <div class="price">
-                            <span class="value">800</span>
-                            <span class="rub">р.</span>
-                        </div>
-                        <div class="btn-wrapper">
-                            <button class="btn__buy">Добавить</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Конец приятных дополнений -->
-            <!-- Форма оформления заказа -->
-            <div class="row">
-                <h2>Оформление доставки</h2>
-                <form action="" class="shipping-form wow fadeIn">
-                    <div class="col-md-6">
-                        <div class="my-details brown-block">
-                            <div class="title">Мои данные (заказчик):</div>
-                            <input type="text" class="field" placeholder="Введите свое имя" required>
-                            <input type="text" class="field phone__field" placeholder="Введите номер вашего телефона" required>
-                            <input type="text" class="field" placeholder="Введите адрес электронной почты" required>
-                            <textarea class="textarea" name="free-card" placeholder="Введите текст бесплатной открытки"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="recipient-details brown-block">
-                            <div class="title">Данные получателя:</div>
-                            <div class="radio-btn-wrapper">
-                                <label class="radio-btn">
-                                    <input type="checkbox" id="giveAnother" name="options" />
-                                    <span></span>
-                                </label>
-                                <div class="name">Подарить букет другому человеку?</div>
-                            </div>
-                            <input type="text" class="field giveAnother__field required disabled" placeholder="Введите имя получателя" disabled="true">
-                            <input type="text" class="field giveAnother__field required phone__field disabled" placeholder="Введите номер телефона получателя" disabled="true">
-                            <textarea class="textarea giveAnother__field disabled" name="add-pojelaniya" placeholder="Дополнительные пожелания" disabled="true"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12 clearfix">
-                        <div class="delivery-address brown-block clearfix">
-                            <div class="col-md-6">
-                                <div class="title">Адрес доставки:</div>
-                                <div class="radio-btn-wrapper">
-                                    <label class="radio-btn">
-                                        <input type="radio" name="options" checked />
-                                        <span></span>
-                                    </label>
-                                    <div class="name adress">Самовывоз: Магазин “Million Flowers” г. Челябинск, Свердловский проспект, 6</div>
-                                </div>
-                                <div class="radio-btn-wrapper">
-                                    <label class="radio-btn">
-                                        <input type="radio" name="options" />
-                                        <span></span>
-                                    </label>
-                                    <div class="name">Доставка по городу Челябинск (круглосуточно) <span class="delivery-value">300</span> р.</div>
-                                </div>
-                                <textarea class="textarea disabled" name="add-pojelaniya" placeholder="Укажите наиболее полный адрес доставки и какие-либо тонкости проезда (если они есть)"></textarea>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="delivery-total-summ">
-                                    <span class="value">3 480</span> р.
-                                    <br>
-                                    <span class="annonce-text">(итого с учетом доставки)</span>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" id="deliverty-date" class="field delivery-field" placeholder="Дата доставки">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" id="deliverty-time" class="field delivery-field" placeholder="Время доставки">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="btn-wrapper">
-                                    <button class="finally__order__btn">Оформить заказ</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <!-- Конец формы оформления заказа -->
         </div>
-    </div>
-    <!-- Конец корзины -->
-    <!-- Наши преимущества -->
+        
+    </main>
+    
+    
     <div class="advantages-wrapper">
         <div class="container940">
             <div class="row">
                 <h2 class="advantages__title">
-            Наши преимущества
-          </h2>
+        Наши преимущества
+        </h2>
             </div>
             <div class="row">
                 <div class="col-md-2 col-xs-6 col-sm-6 col-md-offset-1">
@@ -582,8 +398,8 @@
             </div>
         </div>
     </div>
-    <!-- Конец преимуществ -->
-    <!-- Отзывы клиентов -->
+    
+    
     <div class="reviews-wrapper clearfix">
         <div class="container940">
             <h2 class="reviews__title">Отзывы клиентов</h2>
@@ -634,15 +450,15 @@
             </div>
         </div>
     </div>
-    <!-- Конец отзывов -->
-    <!-- О нас -->
+    
+    
     <div class="about-text-wrappper">
         <div class="container940">
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="about__title">
-              О нас
-            </h2>
+          О нас
+          </h2>
                     <div class="about__text">
                         <p>В 2009 году проблема с покупкой и доставкой букетов цветов полностью исчезла в связи с основанием компании «Мосцветторг». Наша компания предлагает своим клиентам большой выбор цветов: от привычных букетов из роз, тюльпанов, хризантем и лилий до экзотических стрелиций, протей. Сделать заказ цветов в Интернет-магазине «Мосцветторг» очень просто: по телефону или отправить заказ через Интернет. Наши операторы проконсультируют Вас по ассортименту и помогут с выбором. </p>
                         <p>Интернет-магазин цветов работает 24 часа в сутки, в любое время дня и ночи мы готовы обеспечить наших клиентов свежими цветами, оригинальными цветочными композициями и просто хорошим настроением. Круглосуточная доставка цветов – это то, что необходимо нашим клиентам в современных условиях жизни. Чтобы купить цветы в магазине без суеты и хлопот, не нужно тратить время на поиск и посещение цветочного магазина, ведь купить цветы можно не выходя из дома, офиса, из любого места, где есть Интернет. Даже если Интернет отсутствует, запишите наш номер телефона, мы и в этом случае поможем с покупкой цветов. Качественные букеты – наша задача при обращении клиентов в магазин «Мосцветторг». В 2009 году проблема с покупкой и доставкой букетов цветов полностью исчезла в связи с основанием компании «Мосцветторг». Наша компания предлагает своим клиентам большой выбор цветов: от привычных букетов из роз, тюльпанов, хризантем и лилий до экзотических стрелиций, протей. Сделать заказ цветов в Интернет-магазине «Мосцветторг» очень просто: по телефону или отправить заказ через Интернет. Наши операторы проконсультируют Вас по ассортименту и помогут с выбором. </p>
@@ -652,8 +468,8 @@
             </div>
         </div>
     </div>
-    <!-- Конец О нас -->
-    <!-- Футер -->
+    
+    
     <footer class="footer">
         <div class="container940">
             <div class="row">
@@ -674,8 +490,8 @@
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </button>
-                                    <!-- <div class="navbar__title">Главное меню</div> -->
-                                    <!--           <a class="navbar-brand" href="#">Million</a> -->
+                                    
+                                    
                                 </div>
                                 <div id="navbar-bottom" class="navbar-collapse collapse">
                                     <ul class="bottom-menu">
@@ -763,8 +579,8 @@
             </div>
         </div>
     </footer>
-    <!-- Конец футера -->
-    <!-- Конец футера -->
+    <a href="#0" class="cd-top"></a>
+    
     <script src="production/scripts.min.js"></script>
 </body>
 

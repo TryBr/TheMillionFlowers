@@ -174,9 +174,11 @@ $('#giveAnother').click(function(){
       $('.giveAnother__field').attr('disabled', false);
       $('.giveAnother__field').removeClass('disabled');
       $('.giveAnother__field').addClass('enabled');
+      $('.required').attr('required', true);
     } else {
       $('.giveAnother__field').attr('disabled', true);
       $('.giveAnother__field').removeClass('enabled');
       $('.giveAnother__field').addClass('disabled');
+      $('.required').attr('required', false);
     }
 });
