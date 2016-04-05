@@ -325,6 +325,17 @@ body {
 	background-repeat: no-repeat;
 	background-position: center -15px;
 	height: 505px;
+	
+	.phone__pipe {
+	    position: absolute;
+	    top: -40px;
+	    right: 280px;
+	    z-index: -1;
+	}
+
+	.container940 {
+		position: relative;
+	}
 }
 
 .container940 {
@@ -449,9 +460,9 @@ body {
 }
 
 .top-menu {
+	float: none !important;
     margin: 0 auto;
     width: 630px;
-    float: none;
     display: table;
 	.top-menu__li {
 		font-family: @bebasBold;
@@ -502,6 +513,10 @@ body {
 	.phone {
 		font-size: 47px;
 		font-family: @bebasBold;
+
+		.phone-icon {
+			display: none;
+		}
 		.code {
 			color: @pink;
 			margin-right: 10px;
@@ -1993,6 +2008,19 @@ body {
 ============================================*/
 
     @media (min-width: 320px) and (max-width: 960px) {
+
+    	.header {
+			.phone {
+			    font-size: 42px;
+			    font-family: BebasBold;
+
+			    .phone-icon {
+					display: block !important;
+					float: left;
+					margin-top: 10px;
+				}
+			}
+    	}
     	
     	.navbar-collapse {
 			padding-right: 10px;
@@ -2118,6 +2146,10 @@ body {
 
 		.cart-container h2 {
 			text-align: center;
+		}
+
+		.phone__pipe {
+			display: none;
 		}
 
     }
